@@ -3,7 +3,7 @@
 <!-- March 14 2025 -->
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -54,7 +54,7 @@
     }
       
       .image-gallery {
-        column-count: 3;
+        column-count: 1;
         width: 100%;
         margin: auto;
       }
@@ -65,58 +65,51 @@
         margin-bottom: 10px;
         overflow: hidden;
         position: relative;
+         transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
+      
+       .image-containers:hover img {
+    opacity: 0.1;
+   transform: scale(1.01);
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+      
+          .image-titles {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+             color: #FFFFFF;
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 650;
+        font-style: italic;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+            
+      }
+      
+                .image-titles a{
+     
+             color: #FFFFFF;
+        font-family: "Poppins", sans-serif;
+        font-size: 110px;
+  text-decoration: none;
+            
+      }
+      
+      .image-containers:hover .image-titles {
+    opacity: 1;
+        color: #FFFFFF;
+}
+
 
       .image-size1 {
         width: 100%;
         height: 100%;
         object-fit: cover;
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-
-      
-      /* second gallery */
-      
-      
-          .gallerybox2 {
-            width: 100%;
-      text-align: center;
-        position: absolute;
-      top: 2400px;
-      }
-      
-        .gallery-title2 {
-      font-size: 48px;
-      font-family: "Poppins", sans-serif;
-          font-style: italic;
-          color: #FFFFFF;
-      font-weight: 600;
-
-    }
-      
-       .gallery-date2 {
-      font-size: 24px;
-      font-family: "Figtree", sans-serif;
-          font-style: italic;
-          color: #FFFFFF;
-      font-weight: 300;
-         margin-bottom: 50px;
-    }
-      
-      
-         .image-gallery2 {
-      column-count: 3;
-        width: 100%;
-        margin: auto;
-      }
-
-      .image-containers2 {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 10px;
-        overflow: hidden;
-        position: relative;
-      }
-      
       /*contact info footer */
 
       .contact-info-bar {
@@ -134,7 +127,7 @@
         font-size: 15px;
         font-weight: 300;
         color: #FFFFFF;
-        top: 5550px;
+        top: 3950px;
       }
 
       .contact-info-bar li {
@@ -165,7 +158,7 @@
         font-size: 10px;
         font-weight: 300;
         color: #FFFFFF;
-        top: 5620px;
+        top: 4020px;
       }
 
       .info-bar-copyright li {
@@ -429,83 +422,32 @@ left: 500px;
   <body>
       <!-- gallery 1 -->
       <div class="gallerybox">
-    <h1 class="gallery-title">Relocate</h1>
     <div class="image-gallery">
     
       <div class="image-containers">
-          <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
-      </div>
-      
-               <div class="image-containers">
-          <img src="Written_in_the_Stars_Covers-Indesign_pages-14-15-01.jpg" alt="The first 3D render of a Ghibli Landscape with moving grass, and leaves." class="image-size1">
-      </div>
-      
-          <div class="image-containers">
-          <img src="Written_in_the_Stars_Pages_46-47-02.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
-    </div>
-      
-         <div class="image-containers">
-          <img src="Written_in_the_Stars_Covers-Indesign.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
-      </div>
-      
-      <div class="image-containers">
-          <img src="Written_in_the_Stars_Pages_38-39-02.jpg" alt="3D render of a Ghibli Landscape background of mountains" class="image-size1">
+         <a href="https://www.figma.com/proto/dM868LhNHAKPPWSkFejWtO/M3?node-id=79-3674&starting-point-node-id=79%3A3787">
+          <img src="Logo-Relocate-01.jpg" alt="A title of the student made application Relocate. The graphic also replaces the locate portion with a location logo." class="image-size1">
+        </a>
+            <div class="image-titles"> 
+            <a href="https://www.figma.com/proto/dM868LhNHAKPPWSkFejWtO/M3?node-id=79-3674&starting-point-node-id=79%3A3787">Check Our Prototype!</a>
+          </div>
       </div>
       </div>   
-       </div>
-    
-    <!-- gallery 2 -->
-       <div class="gallerybox2">
-    <h1 class="gallery-title2">It's Not That Serious!</h1>
-    <h1 class="gallery-date2">Sept. 2024 - Jan. 2025.</h1>
-       <div class="image-gallery2">
-      <div class="image-containers2">
-          <img src="It's_Not_That_Serious_covers-2-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-         
-         <div class="image-containers2">
-          <img src="INTS_Pages-30-31rgb-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-         
-               <div class="image-containers2">
-          <img src="INTS_Pages-30-31rgb-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-         
-                <div class="image-containers2">
-          <img src="INTS_Pages-40-41rgb2-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-         
-               <div class="image-containers2">
-          <img src="INTS_Pages-40-41rgb2-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-         
-              <div class="image-containers2">
-          <img src="INTS_Pages-46-47rgb-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-         
-               <div class="image-containers2">
-          <img src="INTS_Pages-46-47rgb-01.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-               <div class="image-containers2">
-          <img src="It's_Not_That_Serious_covers-2-02.jpg" alt="A 3D render of several mountains on a high altitude with foliage all over the scene" class="image-size1">
-      </div>
-         </div>
-     
     </div>
     
     
     <div class="info-box role">
     <h1 class="info-header">Role.</h1>
-    <p class="info-text">  Project Manager, Graphic Designer</p>
+    <p class="info-text"> Project Manager, Graphic Designer</p>
 </div>
     
         <div class="info-box description">
-    <p class="info-text">  Relocate began as a class assignment created by me and four classmates. It is an application to make the process of looking for any recreation center in a more simplified process. However, this project has since grown beyond the classroom, and together, we continue refining and expanding on our work, learning from our mistakes and improving on the application. This project has refined my skills in leadership, collaboration, and UI/UX design.</p>
+    <p class="info-text"> Relocate began as a class assignment created by me and four classmates. It is an application to make the process of looking for any recreation center in a more simplified process. However, this project has since grown beyond the classroom, and together, we continue refining and expanding on our work, learning from our mistakes and improving on the application. This project has refined my skills in leadership, collaboration, and UI/UX design.</p>
 </div>
     
 <div class="info-box date">
     <h1 class="info-header">Date.</h1>
-    <p class="info-text">Sept. 2024 - Ongoing</p>
+    <p class="info-text">Sept. 2024 - Ongoing.</p>
 </div>
 
     <div class="contact-info-bar">
